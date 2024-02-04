@@ -1,5 +1,6 @@
 <template>
-  <AppHeader :appTitle="msg" v-on:change="changeMessage"></AppHeader>
+  <AppHeader :appTitle="msg" v-on:update="changeMessage"></AppHeader>
+  <AppHeader :appTitle="msg" v-on:update="changeMessage"></AppHeader>
 </template>
 
 <script>

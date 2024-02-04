@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     changeTitle() {
-      this.$emit("change");
+      this.$emit("update");
     },
   },
 };
