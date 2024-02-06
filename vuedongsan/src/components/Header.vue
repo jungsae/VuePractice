@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-white fixed top-0 w-full"
+    class="bg-amber-50 fixed top-0 w-full"
     :class="{ 'h-20': isFixed, 'h-20': !isFixed }"
   >
     <nav
