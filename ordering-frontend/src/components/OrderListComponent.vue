@@ -85,7 +85,9 @@ export default {
           console.log(err);
           alert("주문취소 실패");
         }
-        this.orderList = this.orderList.filter((order) => order.id !== orderId);
+        // this.orderList = this.orderList.filter((order) => order.id !== orderId);
+        const order = this.orderList.find((order) => order.id === orderId);
+        order.orderStatus = "CANCELED";
       }
     },
   },

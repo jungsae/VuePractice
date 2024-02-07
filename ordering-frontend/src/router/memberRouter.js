@@ -18,6 +18,6 @@ export const memberRoutes = [
   {
     path: "/mypage",
     name: "MyPage",
-    component: () => import("@/views/MyPage"),
+    component: () => import("@/views/MyPage.vue"),
   },
 ];

@@ -14,7 +14,7 @@
   </table>
   <OrderListComponent
     :isAdmin="false"
-    apiUrl="http://localhost:8080/member/myorders"
+    apiUrl="http://localhost:8080/member/orders"
   ></OrderListComponent>
 </template>
 
