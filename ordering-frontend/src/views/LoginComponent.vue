@@ -33,7 +33,7 @@ export default {
     async doLogin() {
       try {
         const response = await axios.post(
-          "http://localhost:8080/doLogin",
+          `${process.env.VUE_APP_API_BASE_URL}/doLogin`,
           JSON.stringify(this.loginForm),
           {
             headers: { "Content-Type": `application/json` },

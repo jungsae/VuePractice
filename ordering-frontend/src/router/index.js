@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // export default인 경우에는 {} 필요없고, 여러개의 요소가 있을 경우에는 {} 필요.
 import { memberRoutes } from "./memberRouter.js";
 import { orderRoutes } from "./orderRouter.js";
+import { itemRoutes } from "./itemRouter.js";
 
 const routes = [
   {
@@ -20,6 +21,7 @@ const routes = [
   // 주로, 배열요소를 다른 배열요소에 합할때 사용
   ...memberRoutes,
   ...orderRoutes,
+  ...itemRoutes,
 ];
 
 const router = createRouter({

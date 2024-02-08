@@ -20,6 +20,5 @@ axios.interceptors.response.use(
 );
 // axios를 전역적으로 사용
 app.config.globalProperties.$axios = axios;
-
 app.use(router);
 app.mount("#app");
